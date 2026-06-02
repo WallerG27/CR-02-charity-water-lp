@@ -1,47 +1,385 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ripple Effect | Clean Water Campaign</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+<header class="nav">
+    <div class="logo"><img src="assets/Icons/charitywater_logo_horizontal_BlackText.png" alt="charity: water logo"></div>
+    <nav>
+        <a href="#">Take Action</a>
+        <a href="#">About</a>
+        <a href="#">Why Water?</a>
+        <a href="#">Give</a>
+        <a href="#" class="sign-in">Sign in</a>
+    </nav>
+</header>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+<section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <div class="donation-card">
+            <h3>Help Be The Change</h3>
+            <div class="donation-options donation-frequency">
+                <button>Monthly</button>
+                <button>Once</button>
+            </div>
+            <div class="donation-options donation-amounts">
+                <button>$10</button>
+                <button>$20</button>
+                <button>$40</button>
+                <button>$75</button>
+                <button>$100</button>
+            </div>
+            <button class="give-btn">Give</button>
         </div>
-    </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+        <div class="hero-text">
+            <h1>One Ripple Creates A Wave</h1>
+            <p>Even the smallest action ripples into lasting impact. Help create lasting change through clean water.</p>
+        </div>
+    </div>
+</section>
+
+<div class="cloud-divider" aria-hidden="true"></div>
+
+<section class="impact">
+    <h2>The Rippling Effect</h2>
+
+    <div class="tabs" id="impact-tabs">
+        <button type="button" data-key="Women">Women</button>
+        <button type="button" data-key="Education">Education</button>
+        <button type="button" data-key="Health">Health</button>
+        <button type="button" data-key="Economic">Economic Growth</button>
+    </div>
+
+    <div class="impact-grid">
+        <div class="left-column">
+            <img data-key="Women" src="assets/People/Women_Pump_Tanzania.jpg" alt="Women at pump">
+            <img data-key="Education" src="assets/People/School_Girls.jpg" alt="School girls">
+            <img data-key="Health" src="assets/People/Boys_Smiling_JS.jpg" alt="Boys smiling">
+            <img data-key="Economic" src="assets/People/Man_Smiles_By_Pump_Rwanda.jpg" alt="Man smiling by pump">
+        </div>
+
+        <div class="middle-column">
+            <img id="main-story-img" src="assets/Clean_Water/Pump_Water_Rwanda.jpg" alt="People pumping water">
+        </div>
+
+        <div class="info-box" id="impact-info">
+            Access to clean water and basic sanitation can save around 16,000 lives every week.
+        </div>
+    </div>
+</section>
+
+<div class="cloud-divider cloud-divider-bottom" aria-hidden="true"></div>
+
+<section class="cards">
+    <h2>Start A Ripple</h2>
+
+    <div class="card-row-wrapper">
+        <div class="card-row" id="ripple-row">
+            <div class="action-card" data-key="sponsor">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Pump_Water_Rwanda.jpg" alt="Sponsor a water project">
+                </div>
+                <div class="card-info">
+                    <h4>Sponsor a water project</h4>
+                    <p>By sponsoring a project, you can provide clean water for a community, school, or health clinic.</p>
+                    <a href="https://www.charitywater.org/donate/water-project-sponsorship" target="_blank" rel="noopener">Sponsor Now</a>
+                </div>
+                <p>Sponsor a project</p>
+            </div>
+
+            <div class="action-card" data-key="start-fundraiser">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Water_Jug.jpg" alt="Start a fundraiser">
+                </div>
+                <div class="card-info">
+                    <h4>Start a fundraiser</h4>
+                    <p>Support clean water projects by raising funds for people in need.</p>
+                    <a href="https://www.charitywater.org/fundraise#start-fundraiser" target="_blank" rel="noopener">Get Started</a>
+                </div>
+                <p>Start a fundraiser</p>
+            </div>
+
+            <div class="action-card" data-key="give-fundraiser">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Water_Exchange_Mali.jpg" alt="Give to a fundraiser">
+                </div>
+                <div class="card-info">
+                    <h4>Give to a fundraiser</h4>
+                    <p>Support a fundraiser that captures your heart and you'll show your support for clean water projects.</p>
+                    <a href="https://www.charitywater.org/fundraise#find-a-campaign" target="_blank" rel="noopener">Browse Fundraisers</a>
+                </div>
+                <p>Give to a fundraiser</p>
+            </div>
+
+            <div class="action-card" data-key="legacy">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Water_Sky_Zimbabwe.jpg" alt="Plan for legacy giving">
+                </div>
+                <div class="card-info">
+                    <h4>Plan for legacy giving</h4>
+                    <p>Make a lasting gift to help bring clean water to every person on the planet.</p>
+                    <a href="https://www.charitywater.org/the-tributary" target="_blank" rel="noopener">Learn more</a>
+                </div>
+                <p>Plan for legacy giving</p>
+            </div>
+
+            <div class="action-card" data-key="brand">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Close_Up_Water_JS.jpg" alt="Become a brand partner">
+                </div>
+                <div class="card-info">
+                    <h4>Become a brand partner</h4>
+                    <p>Work closely with our team to develop initiatives with undeniable impact.</p>
+                    <a href="https://www.charitywater.org/brand-partnerships" target="_blank" rel="noopener">Partner with us</a>
+                </div>
+                <p>Become a brand partner</p>
+            </div>
+
+            <div class="action-card" data-key="honor">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Hole_Water.jpg" alt="Honor someone special">
+                </div>
+                <div class="card-info">
+                    <h4>Honor someone special</h4>
+                    <p>Honor or remember someone special by making a gift in their name.</p>
+                    <a href="https://www.charitywater.org/donate/in-honor-of" target="_blank" rel="noopener">Give Today</a>
+                </div>
+                <p>Honor someone special</p>
+            </div>
+
+            <div class="action-card" data-key="tiny-heroes">
+                <div class="frame">
+                    <img src="assets/Clean_Water/Water_Close_Up_Zimbabwe.jpg" alt="Join Tiny Heroes">
+                </div>
+                <div class="card-info">
+                    <h4>Join Tiny Heroes</h4>
+                    <p>Explore how children can make a difference in the lives of kids around the world with the gift of clean water.</p>
+                    <a href="https://www.charitywater.org/tiny-heroes" target="_blank" rel="noopener">Get inspired</a>
+                </div>
+                <p>Join Tiny Heroes</p>
+            </div>
+        </div>
+
+        <button class="cards-arrow" id="ripple-right" aria-label="Show more">›</button>
+    </div>
+</section>
+
+<section class="stats" id="impact-stats">
+    <div class="stats-rail stats-rail-left" aria-hidden="true">
+        <div class="stats-rail-track stats-rail-track-left">
+            <img src="assets/People/Women_Pump_Tanzania.jpg" alt="">
+            <img src="assets/People/School_Girls.jpg" alt="">
+            <img src="assets/People/Boys_Smiling_JS.jpg" alt="">
+            <img src="assets/People/Man_Smiles_By_Pump_Rwanda.jpg" alt="">
+            <img src="assets/People/Pump_Water_Uganda.jpg" alt="">
+            <img src="assets/People/Women_Pump_Tanzania.jpg" alt="">
+            <img src="assets/People/School_Girls.jpg" alt="">
+            <img src="assets/People/Boys_Smiling_JS.jpg" alt="">
+            <img src="assets/People/Man_Smiles_By_Pump_Rwanda.jpg" alt="">
+            <img src="assets/People/Pump_Water_Uganda.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="stats-center">
+        <h2>696 million people lack basic access to clean and safe drinking water</h2>
+        <p>Your donation builds wells, sanitation systems, and hope. Tiny drops. Giant impact.</p>
+        <button>Give Today</button>
+    </div>
+
+    <div class="stats-rail stats-rail-right" aria-hidden="true">
+        <div class="stats-rail-track stats-rail-track-right">
+            <img src="assets/People/Clean_Pump_Water_JS.jpg" alt="">
+            <img src="assets/Clean_Water/Pump_Water_Rwanda.jpg" alt="">
+            <img src="assets/Clean_Water/Water_Jug.jpg" alt="">
+            <img src="assets/Clean_Water/Water_Exchange_Mali.jpg" alt="">
+            <img src="assets/Clean_Water/Close_Up_Water_JS.jpg" alt="">
+            <img src="assets/People/Clean_Pump_Water_JS.jpg" alt="">
+            <img src="assets/Clean_Water/Pump_Water_Rwanda.jpg" alt="">
+            <img src="assets/Clean_Water/Water_Jug.jpg" alt="">
+            <img src="assets/Clean_Water/Water_Exchange_Mali.jpg" alt="">
+            <img src="assets/Clean_Water/Close_Up_Water_JS.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+<section class="map-section">
+    <h2>Follow The Wave</h2>
+    <p>Track real projects and see where your donations make impact around the world.</p>
+
+    <div class="wave-data">
+        <div class="wave-data-card wave-data-card-featured">
+            <img class="wave-data-logo" src="assets/Icons/charitywater_logo_horizontal_BlackText.png" alt="charity: water">
+            <p class="wave-data-updated">Last updated: May 26, 2026</p>
+        </div>
+        <div class="wave-data-card">
+            <strong>21,641,908</strong>
+            <span>people served</span>
+        </div>
+        <div class="wave-data-card">
+            <strong>209,200</strong>
+            <span>water projects</span>
+        </div>
+        <div class="wave-data-card">
+            <strong>29</strong>
+            <span>countries</span>
+        </div>
+    </div>
+
+    <div class="map-box">
+        <img src="assets/Icons/World_Map.png" alt="World map">
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="newsletter-card">
+        <div class="newsletter-copy">
+            <img class="newsletter-mail" src="assets/Icons/mail.png" alt="Mail icon">
+            <h3>Add Impact To Your Inbox</h3>
+            <p>Get our emails to stay in the know.</p>
+        </div>
+
+        <form>
+            <div class="row">
+                <input placeholder="First Name">
+                <input placeholder="Last Name">
+            </div>
+            <input placeholder="Email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Built from ripples and stubborn hope.</p>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+    const tabs = document.querySelectorAll('#impact-tabs button');
+    const mainImg = document.getElementById('main-story-img');
+    const infoBox = document.getElementById('impact-info');
+    const leftImgs = Array.from(document.querySelectorAll('.left-column img'));
+
+    const data = {
+        Women: {
+            main: 'assets/People/Women_Pump_Tanzania.jpg',
+            cards: [
+                'assets/People/Boys_Smiling_JS.jpg',
+                'assets/People/Clean_Pump_Water_JS.jpg',
+                'assets/People/Pump_Water_Uganda.jpg'
+            ],
+            info: '<p>Worldwide, women and girls are responsible for collecting water in 70% of households. When a community receives clean water women get hours back in their day and take charge of their own futures.</p><p><a href="https://www.charitywater.org/global-water-crisis" target="_blank" rel="noopener">Meet the people impacted</a></p>'
+        },
+        Education: {
+            main: 'assets/People/School_Girls.jpg',
+            cards: [
+                'assets/People/Boys_Smiling_JS.jpg',
+                'assets/People/School_Girls.jpg',
+                'assets/Clean_Water/Water_Jug.jpg'
+            ],
+            info: '<p>Less time collecting water means more time in class. With access to clean water, kids around the world are 31% less likely to miss school.</p><p><a href="https://www.charitywater.org/global-water-crisis" target="_blank" rel="noopener">Follow the journey</a></p>'
+        },
+        Health: {
+            main: 'assets/People/Boys_Smiling_JS.jpg',
+            cards: [
+                'assets/Clean_Water/Close_Up_Water_JS.jpg',
+                'assets/People/Boys_Smiling_JS.jpg',
+                'assets/Clean_Water/Water_Exchange_Mali.jpg'
+            ],
+            info: '<p>Access to clean water and basic sanitation can save around 16,000 lives every week.</p><p><a href="https://www.charitywater.org/global-water-crisis" target="_blank" rel="noopener">Learn about lives changed</a></p>'
+        },
+        Economic: {
+            main: 'assets/People/Man_Smiles_By_Pump_Rwanda.jpg',
+            cards: [
+                'assets/Clean_Water/Pump_Water_Rwanda.jpg',
+                'assets/People/Man_Smiles_By_Pump_Rwanda.jpg',
+                'assets/Clean_Water/Water_Sky_Zimbabwe.jpg'
+            ],
+            info: '<p>Every $1 invested in clean water can yield $4.30 in economic returns. Access to clean water is perhaps the single most powerful investment for sparking economic growth humanity has ever known.</p><p><a href="https://www.charitywater.org/global-water-crisis" target="_blank" rel="noopener">See the difference</a></p>'
+        }
+    };
+
+    function setActive(key){
+        const entry = data[key];
+        if(!entry) return;
+        mainImg.src = entry.main;
+        infoBox.innerHTML = entry.info;
+        tabs.forEach(t => t.classList.toggle('active', t.dataset.key === key));
+        leftImgs.forEach(img => img.classList.toggle('highlight', img.dataset.key === key));
+    }
+
+    tabs.forEach(t => {
+        t.addEventListener('click', () => setActive(t.dataset.key));
+    });
+
+    // Initialize first tab
+    if(tabs[0]) setActive(tabs[0].dataset.key);
+
+    // Start A Ripple: arrow scroll behavior
+    const rippleRow = document.getElementById('ripple-row');
+    const rippleRight = document.getElementById('ripple-right');
+    const statsSection = document.getElementById('impact-stats');
+    const statsCenter = document.querySelector('.stats-center');
+    if(rippleRow && rippleRight){
+        rippleRight.addEventListener('click', (e) => {
+            const rect = rippleRight.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const half = rect.width/2;
+            if(clickX < half){
+                // click on left half -> scroll left
+                rippleRow.scrollBy({ left: -rippleRow.clientWidth, behavior: 'smooth' });
+            } else {
+                // click on right half -> scroll right
+                rippleRow.scrollBy({ left: rippleRow.clientWidth, behavior: 'smooth' });
+            }
+        });
+
+        function updateArrow(){
+            const atStart = rippleRow.scrollLeft <= 4;
+            const atEnd = rippleRow.scrollWidth - rippleRow.scrollLeft <= rippleRow.clientWidth + 4;
+            // show control unless there's nowhere to scroll
+            rippleRight.hidden = (atStart && atEnd);
+            rippleRight.dataset.side = atStart ? 'left' : atEnd ? 'right' : 'middle';
+        }
+
+        rippleRow.addEventListener('scroll', updateArrow);
+        window.addEventListener('resize', updateArrow);
+        updateArrow();
+    }
+
+    function updateStatsCenter(){
+        if(!statsSection || !statsCenter) return;
+
+        const sectionRect = statsSection.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const scrollRange = sectionRect.height - viewportHeight;
+
+        if(scrollRange <= 0){
+            statsCenter.style.setProperty('--stats-offset', '0px');
+            return;
+        }
+
+        const progress = Math.min(Math.max((-sectionRect.top) / scrollRange, 0), 1);
+        const offset = (progress - 0.5) * 140;
+        statsCenter.style.setProperty('--stats-offset', `${offset}px`);
+    }
+
+    updateStatsCenter();
+    window.addEventListener('scroll', updateStatsCenter, { passive: true });
+    window.addEventListener('resize', updateStatsCenter);
+
+});
+</script>
+
 </body>
 </html>
